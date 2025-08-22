@@ -1,3 +1,4 @@
+import React from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import ChatWidget from "@/components/ChatWidget";
@@ -23,6 +24,11 @@ const Services = () => {
   const scrollToContact = () => {
     window.location.href = "/#contact";
   };
+
+  // Scroll to top on page load
+  React.useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, []);
 
   const services = [
     {
@@ -354,7 +360,7 @@ const Services = () => {
                   <Button 
                     variant="outline"
                     size="lg"
-                    onClick={() => window.open("tel:+1-555-ENVISION")}
+                    onClick={() => window.location.href = "tel:+15553684746"}
                   >
                     Call Now: +1-555-ENVISION
                   </Button>
