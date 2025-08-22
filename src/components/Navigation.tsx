@@ -38,6 +38,8 @@ const Navigation = () => {
 
   const navigateToPage = (path: string) => {
     navigate(path);
+    // Scroll to top when navigating to a new page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
     setIsMobileMenuOpen(false);
   };
 
@@ -97,7 +99,7 @@ const Navigation = () => {
           {/* Quick Contact */}
           <div className="flex items-center space-x-3 text-sm">
             <a 
-              href="tel:+1-555-ENVISION"
+              href="tel:+15553684746"
               className="flex items-center space-x-1 text-muted-foreground hover:text-primary transition-colors"
             >
               <Phone className="h-4 w-4" />
@@ -177,7 +179,7 @@ const Navigation = () => {
                   Contact
                 </h3>
                 <a 
-                  href="tel:+1-555-ENVISION"
+                  href="tel:+15553684746"
                   className="flex items-center space-x-2 text-foreground hover:text-primary transition-colors"
                 >
                   <Phone className="h-5 w-5" />

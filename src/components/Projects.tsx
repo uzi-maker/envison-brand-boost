@@ -95,9 +95,6 @@ const Projects = () => {
                   <Badge className="absolute top-4 left-4 bg-white/90 text-foreground">
                     {project.category}
                   </Badge>
-                  <Badge className="absolute top-4 right-4 bg-accent text-white">
-                    {project.results}
-                  </Badge>
                 </div>
 
                 <CardContent className="p-6">
